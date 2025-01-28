@@ -42,6 +42,7 @@ select {
 .city:last-child {
   border: none;
 }
+
 .date {
   opacity: 0.7;
 }

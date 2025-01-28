@@ -1,4 +1,15 @@
 function updateTime() {
+  //hong kong
+  let hongKongElement = document.querySelector("#hong-kong");
+  let hongKongDateElement = hongKongElement.querySelector(".date");
+  let hongKongTimeElement = hongKongElement.querySelector(".time");
+  let hongKongTime = moment().tz("Asia/Hong_Kong");
+
+  hongKongDateElement.innerHTML = hongKongTime.format("MMMM Do YYYY");
+  hongKongTimeElement.innerHTML = hongKongTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+
   //los angeles
   let losAngelesElement = document.querySelector("#los-angeles");
   let losAngelesDateElement = losAngelesElement.querySelector(".date");
